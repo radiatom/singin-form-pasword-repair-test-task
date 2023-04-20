@@ -14,24 +14,26 @@ function App() {
   return (
     <div className="App">
       <div className="body">
-        <img className="logo" src={logo} alt="logo" />
-        <div className="login">Login</div>
-        <input
-          className="inputLogin"
-          value={login}
-          type="text"
-          onChange={handleChangeLogin}
-        />
-        <div className="password">Password</div>
-        <input
-          className="inputPassword"
-          value={password}
-          type="text"
-          onChange={handleChangePassword}
-        />
-        <div className="fp">Forgot password?</div>
-        <div className="button">
-          <div className="singIn">Sing In</div>
+        <div className="container">
+          <img className="logo" src={logo} alt="logo" />
+          <div className="login">Login</div>
+          <input
+            className="inputLogin"
+            value={login}
+            type="text"
+            onChange={handleChangeLogin}
+          />
+          <div className="password">Password</div>
+          <input
+            className="inputPassword"
+            value={password}
+            type="text"
+            onChange={handleChangePassword}
+          />
+          <div className="fp">Forgot password?</div>
+          <div className="button">
+            <div className="singIn">Sing In</div>
+          </div>
         </div>
       </div>
     </div>

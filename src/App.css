@@ -1,58 +1,64 @@
+@import url(https://fonts.googleapis.com/css?family=Manrope:600);
 * {
   margin: 0;
   padding: 0;
 }
 
 .App {
+  position: absolute;
   width: 1920px;
   height: 1080px;
   background: #fff url(/src/img/fon.png);
+  font-family: "Manrope";
+  font-weight: 600;
 }
-
+.container {
+  margin-top: 56px;
+  width: 343px;
+  height: 462px;
+}
 .body {
-  position: absolute;
+  display: flex;
+  justify-content: center;
   width: 516px;
   height: 608px;
   margin-top: 214px;
   margin-left: 702px;
-  background: #FFFFFF;
+  background: #ffffff;
   box-shadow: -10px 7px 20px rgba(0, 0, 0, 0.25);
   border-radius: 20px;
 }
 
 .logo {
-  margin-top: 56px;
-  margin-left: 127px;
+  margin-left: 41px;
 }
 
 .login {
+  text-align: start;
   margin-top: 42px;
-  margin-left: 86px;
 }
 
 .inputLogin {
   width: 343px;
   height: 32px;
   margin-top: 4px;
-  margin-left: 86px;
 }
 
 .password {
+  text-align: start;
   margin-top: 4px;
-  margin-left: 86px;
 }
 
 .inputPassword {
   width: 343px;
   height: 32px;
   margin-top: 4px;
-  margin-left: 86px;
 }
 
 .fp {
+  text-align: end;
   margin-top: 11px;
-  margin-left: 301px;
-  color: #F6B52E;
+  color: #f6b52e;
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
@@ -60,18 +66,16 @@
 }
 
 .button {
+  text-align: center;
   width: 343px;
   height: 44px;
   margin-top: 42px;
-  margin-left: 86px;
-  background: #F2B705;
+  background: #f2b705;
   border-radius: 5px;
 }
 
 .singIn {
-  /* margin-top: 15px; */
-  margin-left: 138px;
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 20px;
   line-height: 27px;
 }
@@ -82,9 +86,18 @@
     height: 768px;
     background: #fff url(/src/img/fon2.png);
   }
+  .body {
+    width: 411px;
+    height: 504px;
+    margin-top: 193px;
+    margin-left: 477px;
+  }
+  .container {
+    margin-top: 0px;
+  }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 480px) {
   .App {
     width: 360px;
     height: 768.38px;
