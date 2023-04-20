@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  width: 1920px;
+  height: 1080px;
+  background: #fff url(/src/img/fon.png);
+}
+
+.body {
+  position: absolute;
+  width: 516px;
+  height: 608px;
+  margin-top: 214px;
+  margin-left: 702px;
+  background: #FFFFFF;
+  box-shadow: -10px 7px 20px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+}
+
+.logo {
+  margin-top: 56px;
+  margin-left: 127px;
+}
+
+.login {
+  margin-top: 42px;
+  margin-left: 86px;
+}
+
+.inputLogin {
+  width: 343px;
+  height: 32px;
+  margin-top: 4px;
+  margin-left: 86px;
+}
+
+.password {
+  margin-top: 4px;
+  margin-left: 86px;
+}
+
+.inputPassword {
+  width: 343px;
+  height: 32px;
+  margin-top: 4px;
+  margin-left: 86px;
+}
+
+.fp {
+  margin-top: 11px;
+  margin-left: 301px;
+  color: #F6B52E;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.button {
+  width: 343px;
+  height: 44px;
+  margin-top: 42px;
+  margin-left: 86px;
+  background: #F2B705;
+  border-radius: 5px;
+}
+
+.singIn {
+  /* margin-top: 15px; */
+  margin-left: 138px;
+  color: #FFFFFF;
+  font-size: 20px;
+  line-height: 27px;
+}
+
+@media (max-width: 1366px) {
+  .App {
+    width: 1366px;
+    height: 768px;
+    background: #fff url(/src/img/fon2.png);
+  }
+}
+
+@media (max-width: 360px) {
+  .App {
+    width: 360px;
+    height: 768.38px;
+    background: #fff url(/src/img/fonmob.png);
+  }
+}
