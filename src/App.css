@@ -13,15 +13,15 @@
   font-weight: 600;
 }
 .container {
-  margin-top: 56px;
   width: 343px;
   height: 462px;
+  margin-top: 56px;
+  margin-left: 86px;
+  margin-right: 86px;
+  margin-bottom: 90px;
 }
 .body {
-  display: flex;
-  justify-content: center;
-  width: 516px;
-  height: 608px;
+  display: inline-block;
   margin-top: 214px;
   margin-left: 702px;
   background: #ffffff;
@@ -34,23 +34,21 @@
 }
 
 .login {
-  text-align: start;
   margin-top: 42px;
 }
 
 .inputLogin {
-  width: 343px;
+  width: 100%;
   height: 32px;
   margin-top: 4px;
 }
 
 .password {
-  text-align: start;
   margin-top: 4px;
 }
 
 .inputPassword {
-  width: 343px;
+  width: 100%;
   height: 32px;
   margin-top: 4px;
 }
@@ -66,9 +64,8 @@
 }
 
 .button {
-  text-align: center;
-  width: 343px;
   height: 44px;
+  text-align: center;
   margin-top: 42px;
   background: #f2b705;
   border-radius: 5px;
@@ -86,14 +83,15 @@
     height: 768px;
     background: #fff url(/src/img/fon2.png);
   }
-  .body {
-    width: 411px;
-    height: 504px;
-    margin-top: 193px;
-    margin-left: 477px;
-  }
   .container {
     margin-top: 0px;
+    margin-left: 34px;
+    margin-right: 34px;
+    margin-bottom: 43px;
+  }
+  .body {
+    margin-top: 193px;
+    margin-left: 478px;
   }
 }
 
@@ -103,4 +101,60 @@
     height: 768.38px;
     background: #fff url(/src/img/fonmob.png);
   }
+  .container {
+    margin: 0px;
+    margin-bottom: 43px;
+    padding-left: 11px;
+    padding-right: 11px;
+  }
+  .body {
+    margin-top: 193px;
+    margin-left: 8px;
+  }
+}
+
+/* paswoord */
+
+.pr {
+  margin-top: 40px;
+  text-align: center;
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  color: #989898;
+}
+.enter {
+  margin-top: 47px;
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  color: #989898;
+}
+.inputPhoneNumber {
+  width: 100%;
+  height: 32px;
+  margin-top: 4px;
+}
+.back {
+  margin-top: 10px;
+  text-align: end;
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: #f2b705;
+}
+.buttonCall{
+  height: 44px;
+  text-align: center;
+  margin-top: 42px;
+  position: absolute;
+  width: 343px;
+  height: 44px;
+  background: #F2B705;
+  border-radius: 5px;
 }
