@@ -32,6 +32,7 @@ const PasswordRecovery = () => {
         type="text"
         onChange={handleChangeNumber}
       />
+      <div className="erorrText">{erorr === false ? "" : "Incorect phone"}</div>
       <NavLink className='navLink' to="/singIn" >
         <div className="back">back</div>
       </NavLink>

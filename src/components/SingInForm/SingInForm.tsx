@@ -46,6 +46,7 @@ const SingInForm = () => {
         type="text"
         onChange={handleChangePassword}
       />
+      <div className="erorrText">{erorr === false ? "" : "Incorect pasword or login"}</div>
       <NavLink className='navLink' to="/PasswordRecovery">
         <div className="fp">Forgot password?</div>
       </NavLink>
