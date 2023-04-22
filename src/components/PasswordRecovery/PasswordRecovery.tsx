@@ -8,9 +8,13 @@ import { accountExistsDataSelector } from "../../selectors/selectors";
 
 const PasswordRecovery = () => {
   const accountExists = useSelector(accountExistsDataSelector);
+  const [erorr, setErorr] = useState(accountExists);
+
   const [number, setNumber] = useState("");
+  
   const handleChangeNumber = (event: any) => {
     setNumber(event.target.value);
+    setErorr(false)
   };
   const dispatch = useDispatch();
   const click = () => {
@@ -23,16 +27,16 @@ const PasswordRecovery = () => {
       <div className="pr">Password recovery</div>
       <div className="enter">Enter your phone number</div>
       <input
-        className={accountExists===true?'inputErorr':'input'}
+        className={erorr===true?'inputErorr':'input'}
         value={number}
         type="text"
         onChange={handleChangeNumber}
       />
-      <NavLink to="/singIn">
+      <NavLink className='navLink' to="/singIn" >
         <div className="back">back</div>
       </NavLink>
-      <NavLink to="/hint">
-        <div className="buttonCall" onClick={click}>
+      <NavLink className='navLink' to="/hint" >
+        <div className="button" onClick={click}>
           <div className="singIn">To call</div>
         </div>
       </NavLink>

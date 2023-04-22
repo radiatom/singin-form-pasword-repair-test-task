@@ -13,7 +13,7 @@ const Hint = () => {
         <img className="logo" src={logo} alt="logo" />
         <div className="password">Password: 1234</div>
         <div className="buttonCall">
-          <NavLink to="/singIn">
+          <NavLink className='navLink' to="/singIn">
             <div className="singIn">Ok</div>
           </NavLink>
         </div>

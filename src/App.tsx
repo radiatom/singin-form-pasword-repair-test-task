@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./App.css";
 import logo from "./img/logo.png";
 import SingInForm from "./components/SingInForm/SingInForm";
@@ -7,7 +7,11 @@ import PasswordRecovery from "./components/PasswordRecovery/PasswordRecovery";
 import { Routes, Route } from "react-router-dom";
 import Home from "./components/Home/Home";
 
-function App() {
+function  App  (props:any) {
+  useEffect(() => {
+    alert("login:0501234567; password:1234");
+  }, [props]);
+
   return (
     <div className="App">
       <div className="body">

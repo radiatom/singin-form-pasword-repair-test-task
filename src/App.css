@@ -46,7 +46,7 @@
   height: 32px;
   margin-top: 4px;
 }
-.inputErorr{
+.inputErorr {
   border-width: 3px;
   background-color: rgba(255, 0, 0, 0.192);
   border-color: red;
@@ -68,6 +68,9 @@
   height: 44px;
   text-align: center;
   margin-top: 42px;
+  position: absolute;
+  width: 343px;
+  height: 44px;
   background: #f2b705;
   border-radius: 5px;
 }
@@ -117,6 +120,7 @@
 /* paswoord */
 
 .pr {
+  text-decoration: none;
   margin-top: 40px;
   text-align: center;
   font-family: "Manrope";
@@ -145,13 +149,6 @@
   line-height: 22px;
   color: #f2b705;
 }
-.buttonCall {
-  height: 44px;
-  text-align: center;
-  margin-top: 42px;
-  position: absolute;
-  width: 343px;
-  height: 44px;
-  background: #f2b705;
-  border-radius: 5px;
+.navLink{
+  text-decoration: none;
 }

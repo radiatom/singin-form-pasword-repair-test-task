@@ -21,8 +21,8 @@ describe("reducer", () => {
     expect(newState.phone).toBe('0501234567')
   });
   it("accountExists", () => {
-    const newState= reducer (initialState,setAcountExists());
-    expect(newState.accountExists).toBe(true)
+    const newState= reducer (initialState,setAcountExists('false'));
+    expect(newState.accountExists).toBe('false')
   });
   
 });

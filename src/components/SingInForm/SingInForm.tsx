@@ -46,10 +46,10 @@ const SingInForm = () => {
         type="text"
         onChange={handleChangePassword}
       />
-      <NavLink to="/PasswordRecovery">
+      <NavLink className='navLink' to="/PasswordRecovery">
         <div className="fp">Forgot password?</div>
       </NavLink>
-      <NavLink to="/home">
+      <NavLink className='navLink' to="/home">
         <div className="button" onClick={click}>
           <div className="singIn">Sing In</div>
         </div>

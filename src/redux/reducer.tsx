@@ -25,9 +25,10 @@ export const setPhone = (number: string): setPhoneType => {
 };
 
 export const SET_ACCOUNT_EXISTS: string = "reducer/SET_ACCOUNT_EXISTS";
-export const setAcountExists = (): setAcountExistsType => {
+export const setAcountExists = (a: boolean): setAcountExistsType => {
   return {
     type: SET_ACCOUNT_EXISTS,
+    a: a,
   };
 };
 
@@ -60,8 +61,8 @@ const reducer = (state = initialState, action: actionType) => {
     }
     case SET_ACCOUNT_EXISTS: {
       return {
-        ...action,
-        accountExists: true,
+        ...state,
+        accountExists: action.a,
       };
     }
     case SET_INCORECT_AUTH: {
@@ -86,12 +87,14 @@ export const isAuth =
 export const acountExists =
   (number: string) =>
   (dispatch: ThunkDispatch<initialStateType, unknown, actionType>) => {
-    if (getAccountIsExists(number) === false) {
-      //@ts-ignore
-      dispatch(setAcountExists());
-    } else {
+    if (getAccountIsExists(number) === true) {
       //@ts-ignore
       dispatch(setPhone(number));
+      //@ts-ignore
+      dispatch(setAcountExists(false));
+    } else {
+      //@ts-ignore
+      dispatch(setAcountExists(true));
     }
   };
 export default reducer;

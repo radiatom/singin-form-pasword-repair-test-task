@@ -18,6 +18,7 @@ export type setPhoneType = {
 };
 export type setAcountExistsType = {
   type: typeof SET_ACCOUNT_EXISTS;
+  a: boolean;
 };
 export type setIncorectAuthType = {
   type: typeof SET_INCORECT_AUTH;
