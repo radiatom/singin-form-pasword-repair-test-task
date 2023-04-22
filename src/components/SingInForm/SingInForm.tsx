@@ -4,18 +4,22 @@ import "./../../App.css";
 import { NavLink } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { isAuth } from "../../redux/reducer";
-import { incorectAuthDataSelector } from "../../selectors/selectors";
+import {
+  incorectAuthDataSelector,
+  phoneDataSelector,
+} from "../../selectors/selectors";
 
 const SingInForm = () => {
-  const [login, setLogin] = useState("");
+  const phone = useSelector(phoneDataSelector);
+  const [login, setLogin] = useState(phone);
   const handleChangeLogin = (event: any) => {
     setLogin(event.target.value);
-    setErorr(false)
+    setErorr(false);
   };
-  const [password, setPassword] = useState("");
+  const [password, setPassword] = useState('');
   const handleChangePassword = (event: any) => {
     setPassword(event.target.value);
-    setErorr(false)
+    setErorr(false);
   };
   const dispatch = useDispatch();
   const incorectAuth = useSelector(incorectAuthDataSelector);
@@ -30,14 +34,14 @@ const SingInForm = () => {
       <img className="logo" src={logo} alt="logo" />
       <div className="login">Login</div>
       <input
-        className={erorr===false?"input":"inputErorr"}
+        className={erorr === false ? "input" : "inputErorr"}
         value={login}
         type="text"
         onChange={handleChangeLogin}
       />
       <div className="password">Password</div>
       <input
-        className={erorr===false?"input":"inputErorr"}
+        className={erorr === false ? "input" : "inputErorr"}
         value={password}
         type="text"
         onChange={handleChangePassword}

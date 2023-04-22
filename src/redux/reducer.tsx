@@ -81,17 +81,17 @@ export const isAuth =
   (dispatch: ThunkDispatch<initialStateType, unknown, actionType>) => {
     const auth = getAuth(login, password);
     //@ts-ignore
-    auth === true ? dispatch(setAuth()) :dispatch(setIncorectAuth());
+    auth === true ? dispatch(setAuth()) : dispatch(setIncorectAuth());
   };
 export const acountExists =
   (number: string) =>
   (dispatch: ThunkDispatch<initialStateType, unknown, actionType>) => {
     if (getAccountIsExists(number) === false) {
-    //@ts-ignore
+      //@ts-ignore
       dispatch(setAcountExists());
     } else {
-    //@ts-ignore
-      setPhone(number());
+      //@ts-ignore
+      dispatch(setPhone(number));
     }
   };
 export default reducer;

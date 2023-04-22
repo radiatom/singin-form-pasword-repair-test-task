@@ -2,11 +2,20 @@ import React, { useState } from "react";
 import logo from "./../../img/logo.png";
 import "./../../App.css";
 import { NavLink } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
+import { acountExists, setPhone } from "../../redux/reducer";
+import { accountExistsDataSelector } from "../../selectors/selectors";
 
 const PasswordRecovery = () => {
+  const accountExists = useSelector(accountExistsDataSelector);
   const [number, setNumber] = useState("");
   const handleChangeNumber = (event: any) => {
     setNumber(event.target.value);
+  };
+  const dispatch = useDispatch();
+  const click = () => {
+    //@ts-ignore
+    dispatch(acountExists(number));
   };
   return (
     <div>
@@ -14,7 +23,7 @@ const PasswordRecovery = () => {
       <div className="pr">Password recovery</div>
       <div className="enter">Enter your phone number</div>
       <input
-        className="input"
+        className={accountExists===true?'inputErorr':'input'}
         value={number}
         type="text"
         onChange={handleChangeNumber}
@@ -23,7 +32,7 @@ const PasswordRecovery = () => {
         <div className="back">back</div>
       </NavLink>
       <NavLink to="/hint">
-        <div className="buttonCall">
+        <div className="buttonCall" onClick={click}>
           <div className="singIn">To call</div>
         </div>
       </NavLink>
