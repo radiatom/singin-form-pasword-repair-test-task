@@ -14,7 +14,7 @@ const PasswordRecovery = () => {
       <div className="pr">Password recovery</div>
       <div className="enter">Enter your phone number</div>
       <input
-        className="inputPhoneNumber"
+        className="input"
         value={number}
         type="text"
         onChange={handleChangeNumber}

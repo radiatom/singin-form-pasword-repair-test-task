@@ -37,22 +37,23 @@
   margin-top: 42px;
 }
 
-.inputLogin {
-  width: 100%;
-  height: 32px;
-  margin-top: 4px;
-}
-
 .password {
   margin-top: 4px;
 }
 
-.inputPassword {
-  width: 100%;
+.input {
+  width: 97.5%;
   height: 32px;
   margin-top: 4px;
 }
-
+.inputErorr{
+  border-width: 3px;
+  background-color: rgba(255, 0, 0, 0.192);
+  border-color: red;
+  width: 97.5%;
+  height: 32px;
+  margin-top: 4px;
+}
 .fp {
   text-align: end;
   margin-top: 11px;
@@ -133,11 +134,7 @@
   line-height: 19px;
   color: #989898;
 }
-.inputPhoneNumber {
-  width: 100%;
-  height: 32px;
-  margin-top: 4px;
-}
+
 .back {
   margin-top: 10px;
   text-align: end;
@@ -148,13 +145,13 @@
   line-height: 22px;
   color: #f2b705;
 }
-.buttonCall{
+.buttonCall {
   height: 44px;
   text-align: center;
   margin-top: 42px;
   position: absolute;
   width: 343px;
   height: 44px;
-  background: #F2B705;
+  background: #f2b705;
   border-radius: 5px;
 }
